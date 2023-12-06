@@ -16,11 +16,31 @@ class LoginPage extends StatelessWidget{
             gradient: LinearGradient(colors: [g1,g2],),),
                  child: Center(
                     child: Container(
-                    width: 150,
-                    height: 200,
-                       child:  Text('clickAevent',textAlign:TextAlign.center,
-                       style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color:Colors.orange),),
+                    width: 200,
+                    height: 300,
+                      child: Center(
+                        child: Column(
+                        children: [
+                          Image.asset(Logo),
+                          Text('Wellcome clickAevent App',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontWeight: FontWeight.w100,
+                            fontSize: 10,
+                            color: Colors.white.withOpacity(0.7),
+                          ),),
+                          SizedBox(
+                            child: ElevatedButton(
+                              onPressed: () {
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => NextPage()));
+                              },
+                              child: Text('Next'),
 
+                            ),
+                          )
+                        ],
+                         ),
+                      ),
                     ),
                   ),
                 ),

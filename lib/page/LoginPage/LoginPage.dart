@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../../color.dart';
-import 'Nextpage.dart';
+import 'SignPage.dart';
 
 class LoginPage extends StatelessWidget{
   const LoginPage({super.key});

@@ -37,7 +37,7 @@ class LoginPage extends StatelessWidget{
                               child: Container(
                                 child: FloatingActionButton(
                                   onPressed: () {
-                                    Navigator.push(context, MaterialPageRoute(builder: (context) => Nextpage()));
+                                    Navigator.push(context, MaterialPageRoute(builder: (context) => SignPage()));
                                   },
                                   child: Text('skip',textAlign: TextAlign.center,),
 

@@ -1,4 +1,5 @@
 import 'package:clickaevent/page/LoginPage/LoginPage.dart';
+import 'package:clickaevent/page/LoginPage/Regsiter.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,6 +12,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner:false ,
       title: 'clickaEvent',
+       initialRoute: 'login',
+       routes: {
+        'LaginPage': (context) =>LoginPage(),
+        'Register' : (context) =>Register(),
+       },
       home: LoginPage(),
     );
   }

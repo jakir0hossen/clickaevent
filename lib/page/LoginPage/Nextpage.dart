@@ -11,7 +11,7 @@ class Nextpage extends StatelessWidget{
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(title: Text('clickAevent'),),
+        appBar: AppBar(title: Text('clickAevent',textAlign: TextAlign.center,),),
         body: Center(
           child: ElevatedButton(
             child: Text('Back'),

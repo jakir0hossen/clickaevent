@@ -1,3 +1,4 @@
+import 'package:clickaevent/page/LoginPage/Nextpage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../../color.dart';
@@ -9,6 +10,7 @@ class LoginPage extends StatelessWidget{
   Widget build(BuildContext context) {
 
     return Scaffold(
+
       body: Center(
         child: Container(
           height: double.infinity,
@@ -32,7 +34,7 @@ class LoginPage extends StatelessWidget{
                           SizedBox(
                             child: ElevatedButton(
                               onPressed: () {
-                                Navigator.push(context, MaterialPageRoute(builder: (context) => NextPage()));
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => Nextpage()));
                               },
                               child: Text('Next'),
 

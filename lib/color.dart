@@ -11,3 +11,5 @@ const Color g2 = Colors.blue;
 
 
 String Logo ="assets/image/clickAevent.png";
+String C1="assets/image/circles.png";
+String L1 ="assets/image/il.png";

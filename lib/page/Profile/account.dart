@@ -2,6 +2,9 @@ import 'package:clickaevent/page/LoginPage/LoginPage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+
+import 'editaccount.dart';
+
 class account extends StatefulWidget {
    account({super.key});
 
@@ -67,9 +70,20 @@ class _accountState extends State<account> {
                      color: Colors.grey.shade200,
                      borderRadius:BorderRadius.circular(15),
                    ),
-                   child: Icon(Icons.chevron_right),
+
+                   child: Row(
+                     children: [
+                       TextButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => editaccount()));},
+                         child:Icon(Icons.chevron_right) , ),
+
+                     ],
+
+                   ),
+
+
                  )
                ],
+
              ),
            ),
            SizedBox(
@@ -130,10 +144,17 @@ class _accountState extends State<account> {
                        fontWeight: FontWeight.w500
                    ),),
                  ),
-                 const Spacer(),
-                 Text('English',style: TextStyle(color: Colors.grey),)
-               ],
-             ),
+                    Spacer(),
+                    Container(
+                             width: 50,
+                             height: 50,
+                          decoration: BoxDecoration(
+                               color: Colors.grey.shade200,
+                            borderRadius:BorderRadius.circular(15),
+                              ),
+                                  child: Icon(Icons.chevron_right),
+                        )],
+                      ),
            ),
            SizedBox(height: 20,),
            Container(
@@ -158,7 +179,7 @@ class _accountState extends State<account> {
                    ),),
                  ),
                  const Spacer(),
-                 Text('English',style: TextStyle(color: Colors.grey),)
+                 Text('on/off',style: TextStyle(color: Colors.grey),)
                ],
              ),
            ),
@@ -184,8 +205,16 @@ class _accountState extends State<account> {
                        fontWeight: FontWeight.w500
                    ),),
                  ),
-                 const Spacer(),
-                 Text('English',style: TextStyle(color: Colors.grey),)
+                         Spacer(),
+                           Container(
+                              width: 50,
+                                height: 50,
+                            decoration: BoxDecoration(
+                                color: Colors.grey.shade200,
+                              borderRadius:BorderRadius.circular(15),
+                                   ),
+                              child: Icon(Icons.chevron_right),
+                 )
                ],
              ),
            )

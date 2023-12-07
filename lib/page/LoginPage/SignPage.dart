@@ -2,6 +2,7 @@
 import 'package:clickaevent/color.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import '../Profile/account.dart';
 import 'Regsiter.dart';
 
 class SignPage extends StatefulWidget{
@@ -59,17 +60,23 @@ class _SignPageState extends State<SignPage> {
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text('Sign In',style: TextStyle(
-                          color: Colors.lightBlue,
-                          fontSize: 27,fontWeight: FontWeight.w700
-                        ),),
+                      children: [ TextButton(onPressed: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context) =>account()));
+                      }
+                      ,child:  Text('Sign In',style: TextStyle(
+                            color: Colors.lightBlue,
+                            fontSize: 27,fontWeight: FontWeight.w700
+
+                        ),),),
+
                         CircleAvatar(
                           radius: 30,
                           backgroundColor: Colors.lightBlue,
                           child: IconButton(
                             color: Colors.white,
-                            onPressed: (){},
+                            onPressed: (){
+                              Navigator.push(context, MaterialPageRoute(builder: (context) =>Register()));
+                            },
                             icon: Icon(Icons.arrow_forward),
                           ),
                         )

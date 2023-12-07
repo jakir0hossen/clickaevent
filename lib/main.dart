@@ -1,5 +1,6 @@
 import 'package:clickaevent/page/LoginPage/LoginPage.dart';
 import 'package:clickaevent/page/LoginPage/Regsiter.dart';
+import 'package:clickaevent/page/Profile/account.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
        routes: {
         'LaginPage': (context) =>LoginPage(),
         'Register' : (context) =>Register(),
+         'account' : (context) =>account(),
        },
       home: LoginPage(),
     );

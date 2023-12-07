@@ -24,15 +24,57 @@ class _editaccountState extends State<editaccount> {
           Padding(
             padding: const EdgeInsets.only(right: 10),
             child: IconButton(onPressed: (){},
-                style: IconButton.styleFrom(
-                  backgroundColor: Colors.white,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(15)
-                  ),
-                  fixedSize: Size(60, 50),
-                  elevation: 5,
-                ),
+
                 icon: Icon(Icons.check_rounded,color: Colors.white,)),
+          )
+        ],
+      ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+         Text('Account',
+         style: TextStyle(
+           fontSize: 36,
+           fontWeight: FontWeight.bold
+         ),),
+          SizedBox(
+            height: 40,
+          ),
+          Row(
+            children: [
+              Expanded(child:
+              Text("Photo",
+                style:
+                TextStyle(fontSize: 18,color: Colors.grey),
+              )),
+              Expanded(
+                flex: 5,
+                  child: Column(
+                    children: [
+                      Image.asset("icon/avatar-.jpg",
+                        height: 100,
+                      width: 100,),
+                      
+                      TextButton(onPressed: (){},
+                          style: TextButton.styleFrom(
+                            foregroundColor: Colors.blueAccent
+                          ),
+                          child: Text('Uplord Image'))
+                    ],
+                  )),
+
+            ],
+
+          ),
+          SizedBox(height: 40,),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text('Name',style: TextStyle(
+                fontSize: 18,
+                color: Colors.grey,
+              ),),
+            ],
           )
         ],
       ),
